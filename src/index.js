@@ -1,13 +1,15 @@
-const express = require("express");
-require("./db/mongoose");
-const userRouter = require("./routers/user");
-const taskRouter = require("./routers/task");
-const bcrypt = require("bcryptjs");
-const jwt = require("jsonwebtoken");
-const User = require("./models/user");
-const Task = require("./models/task");
+const app = require('./app');
 
-const app = express();
+// const express = require("express");
+// require("./db/mongoose");
+// const userRouter = require("./routers/user");
+// const taskRouter = require("./routers/task");
+// const bcrypt = require("bcryptjs");
+// const jwt = require("jsonwebtoken");
+// const User = require("./models/user");
+// const Task = require("./models/task");
+
+// const app = express();
 //const port = process.env.PORT || 3000;
 const port = process.env.PORT;
 
@@ -28,9 +30,11 @@ const port = process.env.PORT;
 // });
 
 //Parse incoming json to object
-app.use(express.json());
-app.use(userRouter);
-app.use(taskRouter);
+
+// app.use(express.json());
+// app.use(userRouter);
+// app.use(taskRouter);
+
 //setup a router
 // app.use(router);
 
